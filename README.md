@@ -4,6 +4,7 @@
 ![effect1](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/beforeafter_homeback.png)
 ![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/beforeafter_garage.png)
 ![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/effect.png)
+## System Structure
 ![Overview](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20220915_130832.JPG)
 ## How it works.
 Roktrack heads to the pylon recognized based on camera image. When it approaches the pylon more than a certain amount, it turns around and searches fot next one. By speeding up the turning timing with each lap, it will enter from the outside to the inside.
@@ -63,7 +64,7 @@ Confirmation of the current mowing situation and remote sensing by artificial sa
 現在の草刈状況の確認と人工衛星によるリモートセンシング。
 
 人工卫星对当前割草情况的确认和遥感。
-![モバイルアプリ](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/app.jpg)
+![モバイルアプリ](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/app.JPG)
 
 ## Spec
 ### Effective distance
@@ -92,8 +93,8 @@ YOLOv7学习+高位摄像头+可变分辨率实现远距离检测
 ### working time
 About 3 hours.
 ### batteries
-- Lifepo4 4S 12.8V 10Ah
-- mobile battery 10000mAh
+- Lifepo4 4S 12.8V 10Ah (1000cycle)
+- mobile battery 10000mAh (500cycle)
 ### mowing width
 200mm
 ### speed
@@ -108,6 +109,8 @@ high mount camera: 370mmx370mmx530mm
 low mount camera: 370mmx380mmx230mm
 ### weight
 5.5kg
+### operating temperature
+max outside temperature 35℃
 
 # ストーリー
 ## 開発の背景
