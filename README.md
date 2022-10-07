@@ -111,6 +111,8 @@ low mount camera: 370mmx380mmx230mm
 5.5kg
 ### operating temperature
 max outside temperature 35℃
+### Fuse
+rated 10A
 
 # ストーリー
 ## 開発の背景
