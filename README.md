@@ -1,10 +1,10 @@
 # Roktrack - Pylon-Guided Robotic Mower
 ![Sambnail0](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/new_look.jpg)
 ![Sambnail1](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/sambnail1.jpg)
-![Sambnail2](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/sambnail.jpg)
+<!-- ![Sambnail2](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/sambnail.jpg) -->
 ![effect1](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/beforeafter_homeback.jpg)
 ![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/beforeafter_community.jpg)
-![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/effect.jpg)
+![effect3](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/effect.jpg)
 https://youtu.be/5oMwZd8DZL8
 ## System Structure
 ![Overview](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20220915_130832.JPG)
