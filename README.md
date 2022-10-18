@@ -1,11 +1,14 @@
 # Roktrack - Pylon-Guided Robotic Mower
-![Sambnail1](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/sambnail1.png)
-![Sambnail2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/sambnail.png)
-![effect1](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/beforeafter_homeback.png)
-![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/beforeafter_garage.png)
-![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/effect.png)
+![Sambnail0](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/new_look.jpg)
+![Sambnail1](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/sambnail1.jpg)
+![Sambnail2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/sambnail.jpg)
+![effect1](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/beforeafter_homeback.jpg)
+![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/beforeafter_garage.jpg)
+![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/effect.jpg)
+https://youtu.be/5oMwZd8DZL8
 ## System Structure
 ![Overview](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20220915_130832.JPG)
+2022/10/18 カメラを変更し、外観をアップデートしました。
 ## How it works.
 Roktrack heads to the pylon recognized based on camera image. When it approaches the pylon more than a certain amount, it turns around and searches fot next one. By speeding up the turning timing with each lap, it will enter from the outside to the inside.
 
@@ -21,13 +24,30 @@ Roktrackは草刈用のRS-775モーターを2つ、クローラー駆動用の37
 
 Roktrack 有两个用于割草的 RS-775 电机和两个用于驱动履带的 37GB555 电机（52rpm），10Ah Lifepo4 4s 12V 电池。
 ![Inside](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20220915_131314.JPG)
+### Appearance
+- Improved appearance with web camera and pan/tilt function
+- M10 universal screws supporting the camera are painted black
+- The cover covering the RPi is an aluminum duct cut in half to ensure ventilation, heat insulation, and water resistance
+
+- Webカメラを採用し外観向上、パン・チルト機能
+- カメラを支えるM10全ねじを黒に塗装
+- RPiを覆うカバーは半分に切ったアルミダクトで通気性・断熱性・耐水性確保
+
+- 改进了带有网络摄像头的外观，平移/倾斜功能
+- 所有支持相机的M10螺丝都涂成黑色
+- 用切成两半的铝管覆盖在RPi上，以确保通风、绝缘和防水。
+
+![Cover](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20221018_091812.jpg)
+
+![CoverOpen](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20221018_091844.jpg)
+
 ### Camera
-Using RPi v1 camera. Switching high(1280x960) and low(640x480) resolution on the situation enable long range detection.
+Using Logicool C525 camera. Switching high(1280x960) and low(640x480) resolution on the situation enable long range detection.
 
-Raspberry Pi v1カメラを使用。状況に応じて高(1280x960)、低(640x480)の2つの解像度を切り替える事で長射程を実現。
+ジャンク売り場で見つけたLogicool C525 カメラを使用。状況に応じて高(1280x960)、低(640x480)の2つの解像度を切り替える事で長射程を実現。
 
-使用 RPi v1 相机。根据情况切换高 (1280x960) 和低 (640x480) 分辨率可实现远程检测。
-![Camera](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/DSC_0115.JPG)
+使用 Logicool C525 相机。根据情况切换高 (1280x960) 和低 (640x480) 分辨率可实现远程检测。
+![LogicoolCamera](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20221018_091715.jpg)
 ### Back
 With physical switch to turn off 12V power supply.
 
@@ -43,12 +63,16 @@ By supporting the crawler from both sides of the chassis and cover, the strength
 通过从底盘和罩盖两侧支撑履带，提高强度，防止草进入。
 ![Side](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/DSC_0117.JPG)
 ### Tools
-In-vehicle tool for removing tangled grass and spare parts.
+In-vehicle tool for removing tangled grass and spare parts.Stored inside as grass entanglement rarely occurs anymore.
 
-絡みついた草を除去するための車載工具と予備部品。
+絡みついた草を除去するための車載工具と予備部品。草の絡みつきがほとんど起きなくなったため、内部に格納。
 
-用于清除缠结草和备件的车载工具。
+用于清除缠结草和备件的车载工具。储存在里面，因为草的纠缠很少发生了。
 ![Tools](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/DSC_0114.JPG)
+
+![InVehicleTools1](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20221018_094926.jpg)
+
+![InVehicleTools2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20221018_094942.jpg)
 ## Software
 ### Raspberry pi 4
 Pylon detection by YOLOv7 custom model and operation control.
@@ -98,7 +122,7 @@ About 3 hours.
 ### mowing width
 200mm
 ### speed
-2km/h
+1km/h
 ### steps that can be climbed
 50mm
 ### slope
@@ -146,7 +170,7 @@ rated 10A
 次はYOLOv5による物体検出を用い、三脚にカメラ付きRPiを設置し、その先にESP32で制御する草刈機を置くという方式にしました。スマホからRPiのGUIにアクセスし、カメラ画像に対してユーザーがポリゴンを描き、草刈り範囲とすることで、その範囲内で行動するようにRPiから草刈機に指示を出し続けるというものでした。とても柔軟に範囲設定が出来たのですが、草刈り有効範囲とシステム構成の複雑化がネックとなりました。前者については、30cm程度の物体では5mくらいまでしか物体検出が有効でなく、満足の行く範囲を一度に刈ることが出来ませんでした。また、カメラと草刈機、スマホという３つのデバイスを用いなければならず、可搬性と接続安定性の観点からストレスフルでしたので、次の方式を開発するに至ります。GUIの見た目などは先進的・未来的な感じがして最初は満足感はあったのですが、2週間から1ヶ月立つとまた草は生えてくるので、すぐに飽きてしまいました。
 
 #### カラーコーン（パイロン）誘導方式
-YOLOv5による物体検出はそのまま引き継ぎ、カラーコーンを検出してその中をぐるぐる回る方式に取り掛かりました。カラーコーンはホームセンターにいけば一つ３００円で入手できます。工事現場などで利用されているだけあって耐候性・安定性抜群でとても軽くてスタッキング出来ます。草刈範囲に変更があっても、カラーコーンを追加したり移動させたりするだけで対応できます。３０００枚の画像を撮影しラベル付け、Pytorch＋YOLOv5で学習させたところ、好条件下(晴天日陰一切なし)では30m先、悪条件下（木漏れ日環境）でも１０ｍ先まで認識出来るようになりました。カラーコーンを正方形に設置した場合、机上では900㎡の草刈に対応出来ます（そんな広い場所がなくテスト出来ていません）。また操作性に関しても、カラーコーンをおいてスイッチを押すだけで勝手に動き出すようになり繰り返しの作業も苦ではなくなりました。 また、目論んでいなかった副産物として、カラーコーンを2つだけ設置すれば面的にではなく線的に草刈りが可能となりました。動画のように畦の草刈りに適用できる可能性も出てきました。
+YOLOv7による物体検出はそのまま引き継ぎ、カラーコーンを検出してその中をぐるぐる回る方式に取り掛かりました。カラーコーンはホームセンターにいけば一つ３００円で入手できます。工事現場などで利用されているだけあって耐候性・安定性抜群でとても軽くてスタッキング出来ます。草刈範囲に変更があっても、カラーコーンを追加したり移動させたりするだけで対応できます。３０００枚の画像を撮影しラベル付け、Pytorch＋YOLOv5で学習させたところ、好条件下(晴天日陰一切なし)では40m先、悪条件下（木漏れ日環境）でも15ｍ先まで認識出来るようになりました。カラーコーンを正方形に設置した場合、机上では1600㎡の草刈に対応出来ます（そんな広い場所がなくテスト出来ていません）。また操作性に関しても、カラーコーンをおいてスイッチを押すだけで勝手に動き出すようになり繰り返しの作業も苦ではなくなりました。 また、目論んでいなかった副産物として、カラーコーンを2つだけ設置すれば面的にではなく線的に草刈りが可能となりました。動画のように畦の草刈りに適用できる可能性も出てきました。
 
 #### 運用継続性
 普通のカラーコーンの高さは70cm程度です。草で一定以上覆われてしまうと物体検出が出来なくなって草刈り不能となってしまいます。草が伸びきる前に定期的に草刈りをする必要があります。しかし、家の裏の庭ですら定期的に観察することは面倒で放置しがちです。そのため、アプリ側でESAのSentinel-2の衛星画像（解像度10m）を取得し、過去草刈地点の現在のNDVI（正規化差植生指数）を求め、直近の植生をリモートセンシングできるようにしました。 家から離れた遠隔地であっても、わざわざ現地に赴く必要なく草の伸び具合がわかります。
@@ -186,3 +210,4 @@ UIがカッコよくても草はすぐに生えます。
 
 - 2022/09/18 11:06 画像と動画を差し替え。
 - 2022/10/07 20:00 冬になる前の追い込み開発内容を反映。
+- 2022/10/18 ある程度の機能開発が終わったので、見た目をよくしました。
