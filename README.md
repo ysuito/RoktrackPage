@@ -1,13 +1,13 @@
 # Roktrack - Pylon-Guided Robotic Mower
-![Sambnail0](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/new_look.jpg)
-![Sambnail1](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/sambnail1.jpg)
-![Sambnail2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/sambnail.jpg)
-![effect1](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/beforeafter_homeback.jpg)
-![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/beforeafter_garage.jpg)
-![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/sambnail/effect.jpg)
+![Sambnail0](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/new_look.jpg)
+![Sambnail1](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/sambnail1.jpg)
+![Sambnail2](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/sambnail.jpg)
+![effect1](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/beforeafter_homeback.jpg)
+![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/beforeafter_community.jpg)
+![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/effect.jpg)
 https://youtu.be/5oMwZd8DZL8
 ## System Structure
-![Overview](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20220915_130832.JPG)
+![Overview](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20220915_130832.JPG)
 2022/10/18 カメラを変更し、外観をアップデートしました。
 ## How it works.
 Roktrack heads to the pylon recognized based on camera image. When it approaches the pylon more than a certain amount, it turns around and searches fot next one. By speeding up the turning timing with each lap, it will enter from the outside to the inside.
@@ -15,7 +15,7 @@ Roktrack heads to the pylon recognized based on camera image. When it approaches
 Roktrackはカメラで撮影した画像を基にパイロンを認識し、その方向に向かっていきます。パイロンに一定以上近づくと旋回して次のパイロンを探します。周回を重ねるごとに、旋回タイミングを早めることで外側から内側に入り込んでいきます。
 
 Roktrack 前往根据摄像头图像识别的塔架。当它接近塔架超过一定量时，它会转身寻找下一个。通过加快每圈的转弯时间，它将从外向内进入。
-![HowToWork](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/howitwork.JPG)
+![HowToWork](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/howitwork.JPG)
 ## Hardware
 ### Inside
 Roktrack has two RS-775 motor to mow and two 37GB555 motor(52rpm) to drive crawler, 10Ah Lifepo4 4s 12V battery. 
@@ -23,23 +23,29 @@ Roktrack has two RS-775 motor to mow and two 37GB555 motor(52rpm) to drive crawl
 Roktrackは草刈用のRS-775モーターを2つ、クローラー駆動用の37GB555モーター(52rpm)を2つ、10AhのLifepo4 4S 12Vバッテリーを備えています。
 
 Roktrack 有两个用于割草的 RS-775 电机和两个用于驱动履带的 37GB555 电机（52rpm），10Ah Lifepo4 4s 12V 电池。
-![Inside](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20220915_131314.JPG)
+![Inside](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20220915_131314.JPG)
 ### Appearance
 - Improved appearance with web camera and pan/tilt function
 - M10 universal screws supporting the camera are painted black
 - The cover covering the RPi is an aluminum duct cut in half to ensure ventilation, heat insulation, and water resistance
 
+---
+
 - Webカメラを採用し外観向上、パン・チルト機能
 - カメラを支えるM10全ねじを黒に塗装
 - RPiを覆うカバーは半分に切ったアルミダクトで通気性・断熱性・耐水性確保
+
+---
 
 - 改进了带有网络摄像头的外观，平移/倾斜功能
 - 所有支持相机的M10螺丝都涂成黑色
 - 用切成两半的铝管覆盖在RPi上，以确保通风、绝缘和防水。
 
-![Cover](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20221018_091812.jpg)
+![Appearance](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20221018_091711.jpg)
 
-![CoverOpen](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20221018_091844.jpg)
+![Cover](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20221018_091812.jpg)
+
+![CoverOpen](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20221018_091844.jpg)
 
 ### Camera
 Using Logicool C525 camera. Switching high(1280x960) and low(640x480) resolution on the situation enable long range detection.
@@ -47,32 +53,32 @@ Using Logicool C525 camera. Switching high(1280x960) and low(640x480) resolution
 ジャンク売り場で見つけたLogicool C525 カメラを使用。状況に応じて高(1280x960)、低(640x480)の2つの解像度を切り替える事で長射程を実現。
 
 使用 Logicool C525 相机。根据情况切换高 (1280x960) 和低 (640x480) 分辨率可实现远程检测。
-![LogicoolCamera](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20221018_091715.jpg)
+![LogicoolCamera](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20221018_091715.jpg)
 ### Back
 With physical switch to turn off 12V power supply.
 
 12V系電源を切る物理スイッチ付き。
 
 用物理开关关闭 12V 电源。
-![Back](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/STORYPIC_00009435_BURST220919162430.JPG)
+![Back](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/STORYPIC_00009435_BURST220919162430.JPG)
 ### Side
 By supporting the crawler from both sides of the chassis and cover, the strength is improved and the grass is prevented from entering.
 
 クローラーをシャーシとカバーの両方向から支えることで強度向上と草が入り込むことを防止。
 
 通过从底盘和罩盖两侧支撑履带，提高强度，防止草进入。
-![Side](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/DSC_0117.JPG)
+![Side](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/DSC_0117.JPG)
 ### Tools
 In-vehicle tool for removing tangled grass and spare parts.Stored inside as grass entanglement rarely occurs anymore.
 
 絡みついた草を除去するための車載工具と予備部品。草の絡みつきがほとんど起きなくなったため、内部に格納。
 
 用于清除缠结草和备件的车载工具。储存在里面，因为草的纠缠很少发生了。
-![Tools](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/DSC_0114.JPG)
+![Tools](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/DSC_0114.JPG)
 
-![InVehicleTools1](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20221018_094926.jpg)
+![InVehicleTools1](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20221018_094926.jpg)
 
-![InVehicleTools2](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20221018_094942.jpg)
+![InVehicleTools2](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20221018_094942.jpg)
 ## Software
 ### Raspberry pi 4
 Pylon detection by YOLOv7 custom model and operation control.
@@ -80,7 +86,7 @@ Pylon detection by YOLOv7 custom model and operation control.
 YOLOv7カスタムモデルによるパイロン検知と運転制御。
 
 通过 YOLOv7 自定义模型和操作控制进行 Pylon 检测。
-![全体ソフトウェア構成](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/20220915_134518.JPG)
+![全体ソフトウェア構成](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20220915_134518.JPG)
 
 ### Mobile app
 Confirmation of the current mowing situation and remote sensing by artificial satellite.
@@ -88,7 +94,7 @@ Confirmation of the current mowing situation and remote sensing by artificial sa
 現在の草刈状況の確認と人工衛星によるリモートセンシング。
 
 人工卫星对当前割草情况的确认和遥感。
-![モバイルアプリ](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/app.JPG)
+![モバイルアプリ](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/app.JPG)
 
 ## Spec
 ### Effective distance
@@ -104,7 +110,7 @@ YOLOv7による学習＋ハイマウントカメラ＋可変解像度により�
 YOLOv7学习+高位摄像头+可变分辨率实现远距离检测
 
 晴天：40m 阴天：20m 高对比度环境：15m
-![長距離検出](https://raw.githubusercontent.com/ysuito/RoktrackPage/44765fd0b6a17757f71be70c6f3f45e864f9a7e2/img/DSC_0087.JPG)
+![長距離検出](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/DSC_0087.JPG)
 ### frame rate
 - Low resolution: 0.5FPS
 - High resolution: 0.2FPS
