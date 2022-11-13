@@ -8,21 +8,30 @@
 https://youtu.be/5oMwZd8DZL8
 ## System Structure
 ![Overview](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20220915_130832.JPG)
-2022/10/18 カメラを変更し、外観をアップデートしました。
+2022/11/13 [One-wayモード](#one-way-mode) を追記しました。
 ## How it works.
+### Fill mode
 Roktrack heads to the pylon recognized based on camera image. When it approaches the pylon more than a certain amount, it turns around and searches fot next one. By speeding up the turning timing with each lap, it will enter from the outside to the inside.
 
 Roktrackはカメラで撮影した画像を基にパイロンを認識し、その方向に向かっていきます。パイロンに一定以上近づくと旋回して次のパイロンを探します。周回を重ねるごとに、旋回タイミングを早めることで外側から内側に入り込んでいきます。
 
 Roktrack 前往根据摄像头图像识别的塔架。当它接近塔架超过一定量时，它会转身寻找下一个。通过加快每圈的转弯时间，它将从外向内进入。
 ![HowToWork](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/howitwork.JPG)
+
+### One-way mode
+By controlling it to move slightly to the left when approaching the pylon, it is now possible to trace the pylons lined up in a straight line.If you install a pylon every 20 meters, you can guide as much as you want, and it can be used as a mowing of ridges and as an outdoor patrol robot.
+
+パイロンに最接近する際に少し左側に寄せるように制御することで直線状に並んだパイロンをなぞるように進めるようになりました。20m毎にパイロンを設置すればいくらでも誘導でき、畦草刈りや屋外巡回ロボットとして利用できます。
+
+现在，通过控制它，以便它靠近左边一点点，当接近塔，它来跟踪塔排列成直线。每20米安装一个塔，你可以引导尽可能多的，你可以使用它作为割草和户外巡逻机器人。
+![HowToWorkOneWay](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/Screenshot_20221111-100620~2.JPG)
 ## Hardware
 ### Inside
-Roktrack has two RS-775 motor to mow and two 37GB555 motor(52rpm) to drive crawler, 10Ah Lifepo4 4s 12V battery. 
+Roktrack has two RS-775 motor to mow and two 37GB555 motor(56rpm) to drive crawler, 10Ah Lifepo4 4s 12V battery. 
 
-Roktrackは草刈用のRS-775モーターを2つ、クローラー駆動用の37GB555モーター(52rpm)を2つ、10AhのLifepo4 4S 12Vバッテリーを備えています。
+Roktrackは草刈用のRS-775モーターを2つ、クローラー駆動用の37GB555モーター(56rpm)を2つ、10AhのLifepo4 4S 12Vバッテリーを備えています。
 
-Roktrack 有两个用于割草的 RS-775 电机和两个用于驱动履带的 37GB555 电机（52rpm），10Ah Lifepo4 4s 12V 电池。
+Roktrack 有两个用于割草的 RS-775 电机和两个用于驱动履带的 37GB555 电机（56rpm），10Ah Lifepo4 4s 12V 电池。
 ![Inside](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20220915_131314.JPG)
 ### Appearance
 - Improved appearance with web camera and pan/tilt function
@@ -216,4 +225,5 @@ UIがカッコよくても草はすぐに生えます。
 
 - 2022/09/18 11:06 画像と動画を差し替え。
 - 2022/10/07 20:00 冬になる前の追い込み開発内容を反映。
-- 2022/10/18 15:00 ある程度の機能開発が終わったので、見た目をよくしました。他にもバンパーの割り込み化やUSBメモリへのログ出力機能など。
+- 2022/10/18 15:00 ある程度の機能開発が終わったので、見た目をよくしました。他にもバンパーの割り込み化やUSBメモリへのログ出力機能など。速度を2km/h→1km/hに修正
+- 2022/11/13 15:00 one-wayモードの追加。ギアモーター回転数の修正(52->56rpm)。タグの修正をしました。
