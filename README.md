@@ -1,14 +1,13 @@
 # Roktrack - Pylon-Guided Robotic Mower
-![Sambnail0](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/new_look.jpg)
+![Sambnail0](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/mainsambnail.jpg)
 ![Sambnail1](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/sambnail1.jpg)
-<!-- ![Sambnail2](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/sambnail.jpg) -->
+![multipurpose](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/multipurpose.jpg)
 ![effect1](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/beforeafter_homeback.jpg)
 ![effect2](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/beforeafter_community.jpg)
-![effect3](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/effect.jpg)
 https://youtu.be/5oMwZd8DZL8
 ## System Structure
 ![Overview](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20220915_130832.JPG)
-2022/11/13 [One-wayモード](#one-way-mode) を追記しました。
+2022/11/13 [multipurpose](#multipurpose) を追記しました。
 ## How it works.
 ### Fill mode
 Roktrack heads to the pylon recognized based on camera image. When it approaches the pylon more than a certain amount, it turns around and searches fot next one. By speeding up the turning timing with each lap, it will enter from the outside to the inside.
@@ -25,6 +24,31 @@ By controlling it to move slightly to the left when approaching the pylon, it is
 
 现在，通过控制它，以便它靠近左边一点点，当接近塔，它来跟踪塔排列成直线。每20米安装一个塔，你可以引导尽可能多的，你可以使用它作为割草和户外巡逻机器人。
 ![HowToWorkOneWay](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/Screenshot_20221111-100620~2.JPG)
+## multipurpose
+![multipurpose](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/multipurpose.jpg)
+
+- Mower
+- Spreader
+- Sweeper
+- Blower
+- Cleaner
+
+---
+
+- 草刈り
+- 散布機
+- スイーパー
+- ブロア
+- 掃除機
+
+---
+
+- 割草机
+- 吊具
+- 扫地机
+- 鼓风机
+- 清洁器
+
 ## Hardware
 ### Inside
 Roktrack has two RS-775 motor to mow and two 37GB555 motor(56rpm) to drive crawler, 10Ah Lifepo4 4s 12V battery. 
@@ -227,3 +251,4 @@ UIがカッコよくても草はすぐに生えます。
 - 2022/10/07 20:00 冬になる前の追い込み開発内容を反映。
 - 2022/10/18 15:00 ある程度の機能開発が終わったので、見た目をよくしました。他にもバンパーの割り込み化やUSBメモリへのログ出力機能など。速度を2km/h→1km/hに修正
 - 2022/11/13 15:00 one-wayモードの追加。ギアモーター回転数の修正(52->56rpm)。タグの修正をしました。
+- 2022/11/20 23:30 草刈以外の実験的な機能を追記。
