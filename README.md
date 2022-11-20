@@ -27,19 +27,23 @@ By controlling it to move slightly to the left when approaching the pylon, it is
 ## multipurpose
 ![multipurpose](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/multipurpose.jpg)
 
-- Mower
-- Spreader
-- Sweeper
-- Blower
-- Cleaner
+- mower
+- Spreader (can spread seeds and fertilizer)
+- sweeper
+- Blower (can blow dust)
+- Vacuum cleaner
+
+*Experimental functions other than mower
 
 ---
 
 - 草刈り
-- 散布機
-- スイーパー
-- ブロア
+- 散布機（種や肥料が撒ける）
+- スイーパー（掃き掃除）
+- ブロア（粉塵を飛ばせる）
 - 掃除機
+
+※草刈以外は実験的な機能
 
 ---
 
@@ -251,4 +255,4 @@ UIがカッコよくても草はすぐに生えます。
 - 2022/10/07 20:00 冬になる前の追い込み開発内容を反映。
 - 2022/10/18 15:00 ある程度の機能開発が終わったので、見た目をよくしました。他にもバンパーの割り込み化やUSBメモリへのログ出力機能など。速度を2km/h→1km/hに修正
 - 2022/11/13 15:00 one-wayモードの追加。ギアモーター回転数の修正(52->56rpm)。タグの修正をしました。
-- 2022/11/20 23:30 草刈以外の実験的な機能を追記。
+- 2022/11/20 23:30 寒くなって刈る草がなくなったので試してみた草刈以外の実験的な機能を追記。
