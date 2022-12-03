@@ -7,7 +7,7 @@
 https://youtu.be/5oMwZd8DZL8
 ## System Structure
 ![Overview](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/20220915_130832.JPG)
-2022/11/13 [multipurpose](#multipurpose) を追記しました。
+2022/12/03 [climbing](#climbing) を追記しました。
 ## How it works.
 ### Fill mode
 Roktrack heads to the pylon recognized based on camera image. When it approaches the pylon more than a certain amount, it turns around and searches fot next one. By speeding up the turning timing with each lap, it will enter from the outside to the inside.
@@ -24,6 +24,24 @@ By controlling it to move slightly to the left when approaching the pylon, it is
 
 现在，通过控制它，以便它靠近左边一点点，当接近塔，它来跟踪塔排列成直线。每20米安装一个塔，你可以引导尽可能多的，你可以使用它作为割草和户外巡逻机器人。
 ![HowToWorkOneWay](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/Screenshot_20221111-100620~2.JPG)
+
+## climbing
+### steep slope(<60°)(experimental)
+![steep](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/steep.gif)
+It is planned to be able to work on slopes of up to 60 degrees by installing wires and linking two units.
+
+ワイヤーを備え付け、2台で連携することで60°までの斜面で作業出来るようになる予定。
+
+计划通过安装电线和连接两个单元，能够在高达 60 度的斜坡上工作。
+
+### wall(=90°)(experimental)
+![wall](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/wall.gif)
+By preparing a wire and slave unit, you can control the movement on the YZ plane from the XY plane. It may be possible to apply it to wall printers in the future.
+
+ワイヤーと子機を準備すれば、XY平面から、YZ平面での動作をコントロール可能。将来的には壁面プリンターなどに応用可能かも。
+
+如果准备了线和从属单元，则可以从 XY 平面控制 YZ 平面上的移动。未来或许可以将其应用到墙壁打印机上。
+
 ## multipurpose
 ![multipurpose](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/sambnail/multipurpose.jpg)
 
@@ -256,3 +274,4 @@ UIがカッコよくても草はすぐに生えます。
 - 2022/10/18 15:00 ある程度の機能開発が終わったので、見た目をよくしました。他にもバンパーの割り込み化やUSBメモリへのログ出力機能など。速度を2km/h→1km/hに修正
 - 2022/11/13 15:00 one-wayモードの追加。ギアモーター回転数の修正(52->56rpm)。タグの修正をしました。
 - 2022/11/20 23:30 寒くなって刈る草がなくなったので試してみた草刈以外の実験的な機能を追記。
+- 2022/12/03 13:00 急斜面・壁面対応状況について追記。
