@@ -26,16 +26,18 @@ By controlling it to move slightly to the left when approaching the pylon, it is
 ![HowToWorkOneWay](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/Screenshot_20221111-100620~2.JPG)
 
 ## climbing
-### steep slope(<60°)(experimental)
+### steep slope(<60°)[experimental]
 ![steep](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/steep.gif)
+
 It is planned to be able to work on slopes of up to 60 degrees by installing wires and linking two units.
 
 ワイヤーを備え付け、2台で連携することで60°までの斜面で作業出来るようになる予定。
 
 计划通过安装电线和连接两个单元，能够在高达 60 度的斜坡上工作。
 
-### wall(=90°)(experimental)
+### wall(=90°)[experimental]
 ![wall](https://raw.githubusercontent.com/ysuito/RoktrackPage/master/img/wall.gif)
+
 By preparing a wire and slave unit, you can control the movement on the YZ plane from the XY plane. It may be possible to apply it to wall printers in the future.
 
 ワイヤーと子機を準備すれば、XY平面から、YZ平面での動作をコントロール可能。将来的には壁面プリンターなどに応用可能かも。
